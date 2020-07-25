@@ -42,3 +42,5 @@ export default function Job({ job }) {
     </Card>
   )
 }
+
+// trav build github job with webdevsimp 31:00
