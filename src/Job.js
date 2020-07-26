@@ -5,8 +5,9 @@ import ReactMarkdown from 'react-markdown';
 export default function Job({ job }) {
   const [open, setOpen] = useState(false);
 
+  console.log(job)
   return (
-    <Card>
+    < Card className="mb-3" >
       <Card.Body>
         <div className="d-flex justify-content-between">
           <div>
@@ -34,13 +35,14 @@ export default function Job({ job }) {
         </Card.Text>
         <Collapse in={open}>
           <div className="mt-4">
-            <ReactMarkdown source={job.description} />
+            <ReactMarkdown
+              source={job.description}
+              escapeHtml={false}
+            />
           </div>
         </Collapse>
       </Card.Body>
 
-    </Card>
+    </Card >
   )
 }
-
-// trav build github job with webdevsimp 31:00
