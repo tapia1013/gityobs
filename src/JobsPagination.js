@@ -14,3 +14,6 @@ export default function JobsPagination({ page, setPage }) {
     </Pagination>
   )
 }
+
+
+
